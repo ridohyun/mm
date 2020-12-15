@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyTC</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/mm/css/reset.css">
+    <link rel="stylesheet" href="/mm/css/common.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <style>
+                html{
+            width: 100vw;
+            height: 100vh;
+            background-color: #495d63;
+            color: #d3d3d3;
+        }
+        body>div{
+            width: 100vw;
+            height:100vh;
+            text-align:center;
+            margin: 0 auto;
+            display:table-cell;
+            vertical-align:middle;
+        }
+        h2{
+            margin-bottom:20px;
+        }
+        fieldset{
+            display: inline;
+            border:none;
+        }
+        legend{
+            display:none
+        }
+        button{
+            color:#d3d3d3;
+        }
+    </style>
+
+</head>
+<body>
+    <div>
+        <h2>
+            회원가입
+        </h2>
+        <form name="form1" action="db.insert.php" method="post">
+            <input style="margin-bottom:5px;" type="text" name="userid" class="form-control" placeholder="아이디 입력"><br>
+            <input style="margin-bottom:5px;" type="password" name="passwd" class="form-control" placeholder="비밀번호 입력"><br>
+            <input style="margin-bottom:15px;" type="text" name="name" class="form-control" placeholder="이름 입력"><br>
+            <button type="submit" class="btn btn-primary btn-block btn-lg">회원가입</button>
+        </form>
+    </div>
+</body>
+</html>
